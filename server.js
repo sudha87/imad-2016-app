@@ -17,9 +17,9 @@ var articleOne=
 var htmlTemplate= {
     <html>
     <head>
-    <title>
-    ${title};
-    </title>
+        <title>
+              ${title}
+        </title>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -28,22 +28,17 @@ var htmlTemplate= {
             <a href='/'>Home</a>
         </div>
         <div>
-            ${heading};
+            ${heading}
         </div>
         <div>
-            ${date};
+            ${date}
         </div>
         <div>
-        ${content};
+        ${content}
         </div>
     </body>
-
 </html>
-};
-
-
-
-
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
