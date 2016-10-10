@@ -14,39 +14,45 @@ var articleOne=
     content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.</p>'
 };
-
-    var htmlTemplate=
-    <html>
-    <title>
-    ${title}
-    </title>
-    <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-    <div class='Container'>    
-        <div>
-            <a href='/'>Home</a>
-        </div>
-        <div>
-            ${heading}
-        </div>
-        <div>
-            ${date}
-        </div>
-        <div>
-        ${content}
-        </div>
-    </body>
+function createTemplate (data)
+{
+var title: data.title;
+var heading: data.heading;
+var date :data.date;
+var content: data.content;
+var htmlTemplate=  '
+<html>
+<title>
+${title}
+</title>
+<link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+<div class='Container'>    
+    <div>
+        <a href='/'>Home</a>
+    </div>
+    <div>
+        ${heading}
+    </div>
+    <div>
+        ${date}
+    </div>
+    <div>
+    ${content}
+    </div>
+</body>
 </html>
-
-    
+';
 return htmlTemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(articleOne));
 });
 app.get('/article-two',function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
