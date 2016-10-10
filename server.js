@@ -14,12 +14,11 @@ var articleOne=
     content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.</p>'
 };
-var htmlTemplate= {
-    <html>
-    <head>
-        <title>
-              ${title}
-        </title>
+
+    var htmlTemplate= <html>
+    <title>
+    ${title}
+    </title>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -38,7 +37,6 @@ var htmlTemplate= {
         </div>
     </body>
 </html>
-}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
