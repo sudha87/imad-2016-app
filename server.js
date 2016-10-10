@@ -5,6 +5,22 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var articleOne= 
+{
+    title:'Article one',
+    heading:'Article one is running',
+    date: 'oct 10 2016',
+    content:
+    '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.</p>'
+};
+
+
+
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
