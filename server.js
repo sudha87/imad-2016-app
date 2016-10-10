@@ -15,7 +15,8 @@ var articleOne=
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.</p>'
 };
 
-    var htmlTemplate= <html>
+    var htmlTemplate=
+    <html>
     <title>
     ${title}
     </title>
