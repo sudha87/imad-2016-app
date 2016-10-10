@@ -19,4 +19,14 @@ body {
 .img-medium {
     height: 200px;
 }
+.Container
+ {
+margin: 0px;
+color: #FF9800;
+Font-Family: Times New Roman;
+font-size: 30;
+padding-top: 50px;
+padding-right: 30px;
+padding-left: 500px;
+}
 
