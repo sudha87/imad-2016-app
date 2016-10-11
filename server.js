@@ -6,17 +6,17 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles = 
+var articles =
 {
-     'article-one':
+    
+      'article-one':
      {
        title:'Article one',
        heading:'Article one is running',
        date: 'oct 10 2016',
        content:
-        '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'
-     }
-      'article-two':
+        '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'}
+        'article-two':
      {
        title:'Article two',
        heading:'Article two is running',
@@ -76,13 +76,6 @@ app.get('/:articleName',function (req, res) {
     var articleName=res.params.articleName
     res.send(createTemplate(articles[articleName]));
 });
-app.get('/article-two',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three',function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));  
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
