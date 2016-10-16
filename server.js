@@ -17,14 +17,14 @@ var articles =
    content:
     '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'
  }
- /*'article-two':
+/* 'article-two':
  {
    title:'Article two',
    heading:'Article two is running',
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article two</p>'
- }*/ 
+ } 
   'article-three':
  {
    title:'Article three',
@@ -32,7 +32,7 @@ var articles =
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
-  }
+  }*/
 };
 function createTemplate (data)
 {
