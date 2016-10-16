@@ -11,24 +11,24 @@ var articles =
 
   'article-one':
  {
-   title:'Article one',
-   heading:'Article one is running',
+   //title:'Article one',
+   //heading:'Article one is running',
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'
  }
     'article-two':
  {
-   title:'Article two',
-   heading:'Article two is running',
+   //title:'Article two',
+   //heading:'Article two is running',
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article two</p>'
  }
   'article-three':
  {
-   title:'Article three',
-   heading:'Article three is running',
+   //title:'Article three',
+   //heading:'Article three is running',
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
@@ -36,16 +36,16 @@ var articles =
 };
 function createTemplate (data)
 {
-var title=data.title;
-var heading=data.heading;
+//var title=data.title;
+//var heading=data.heading;
 var date=data.date;
 var content=data.content;
 var htmlTemplate=  '
 <html>
 <head>
-<title>
+/*<title>
 ${title}
-</title>
+</title>*/
 <link href="/ui/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -53,9 +53,9 @@ ${title}
     <div>
         <a href='/'>Home</a>
     </div>
-    <div>
+    /*<div>
         ${heading}
-    </div>
+    </div>*/
     <div>
         ${date}
     </div>
