@@ -17,7 +17,7 @@ var articles =
    content:
     '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'
  }
-'article-two':
+ 'article-two':
  {
    title:'Article two',
    heading:'Article two is running',
