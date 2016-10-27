@@ -36,13 +36,13 @@ var articles =
 };
 function createTemplate (data)
 {
-var title=data.title;
-var heading=data.heading;
-var date=data.date;
-var content=data.content;
-var htmlTemplate= '
+var title = data.title;
+var heading = data.heading;
+var date = data.date;
+var content = data.content;
+var htmlTemplate = '
 <html>
- <head>
+<head>
   <title>
     ${title}
   </title>
@@ -67,6 +67,7 @@ var htmlTemplate= '
     </div>
 </body>
 </html>    
+ 
 ';
 return htmlTemplate;
 }
