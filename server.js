@@ -32,7 +32,7 @@ var articles =
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
-  }
+  },
 };
 function createTemplate (data)
 {
