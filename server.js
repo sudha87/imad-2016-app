@@ -32,7 +32,7 @@ var articles =
    date: 'oct 10 2016',
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
-  },
+  }
 };
 function createTemplate (data)
 {
@@ -49,24 +49,25 @@ var htmlTemplate= '
     <meta name="viewport" contect="width=device-width, initial-scale=1"/>
     <link href="/ui/style.css" rel="stylesheet" />
  </head>
-<body>
-<div class="container">    
+   <body>
+    <div class="container">    
     <div>
-        <a href="/">Home</a>
+    <a href="/">Home</a>
     </div>
     <hr/>
     <h3>
-        ${heading}
+    ${heading}
     </h3>
     <div>
-        ${date}
+    ${date}
     </div>
     <div>
     ${content}
     </div>
+    </div>
 </body>
-</html>'
-;
+</html>    
+';
 return htmlTemplate;
 }
 
