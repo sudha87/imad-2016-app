@@ -40,23 +40,24 @@ var title=data.title;
 var heading=data.heading;
 var date=data.date;
 var content=data.content;
-var htmlTemplate= 
+var htmlTemplate= '
 <html>
-<head>
-<title>
-${title}
-</title>
-<meta name="viewport" contect="width=device-width, initial-scale=1"/>
-<link href="/ui/style.css" rel="stylesheet" />
-</head>
+ <head>
+  <title>
+    ${title}
+  </title>
+    <meta name="viewport" contect="width=device-width, initial-scale=1"/>
+    <link href="/ui/style.css" rel="stylesheet" />
+ </head>
 <body>
-<div class='Container'>    
+<div class="container">    
     <div>
-        <a href='/'>Home</a>
+        <a href="/">Home</a>
     </div>
-    <div>
+    <hr/>
+    <h3>
         ${heading}
-    </div>
+    </h3>
     <div>
         ${date}
     </div>
@@ -64,8 +65,7 @@ ${title}
     ${content}
     </div>
 </body>
-</html>
-'
+</html>'
 ;
 return htmlTemplate;
 }
