@@ -34,7 +34,7 @@ var articles =
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
   }
 };
-                    function createTemplate (data)
+function createTemplate (data)
                     {
                             var title = data.title;
                             var heading = data.heading;
@@ -71,6 +71,7 @@ var articles =
                                 return htmlTemplate; 
                                   
                             } 
+                    
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
