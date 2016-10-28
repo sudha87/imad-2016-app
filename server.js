@@ -46,7 +46,6 @@ var articles =
                       <title>
                         ${title}
                       </title>
-                        <meta name="viewport" contect="width=device-width, initial-scale=1"/>
                         <link href="/ui/style.css" rel="stylesheet" />
                      </head>
                        <body>
