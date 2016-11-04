@@ -22,7 +22,7 @@ var articles =
    heading:'Article one is running',
    date: 'oct 10 2016',
    content:
-    '<p>Modern application development course is teached by hasura team.It is very insteresting to develop web application.</p>'
+    '<p>Modern application development course is teaching by hasura team.It is very interesting to develop web application.</p>'
  },
  'article-two':
  {
@@ -30,7 +30,7 @@ var articles =
    heading:'Article two is running',
    date: 'oct 10 2016',
    content:
-    '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article two</p>'
+    '<p>Modern application development course is teaching by hasura team.It is very interesting to develop web application.article two</p>'
  }, 
   'article-three':
  {
