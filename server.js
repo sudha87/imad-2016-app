@@ -13,7 +13,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles =
+/*var articles =
 {
 
   'article-one':
@@ -40,7 +40,7 @@ var articles =
    content:
     '<p>Modern application development course is teached by hasura team.It is very instresting to develop web application.article three</p>'
   }
-};
+};*/
 
 function createTemplate (data) {
     var title = data.title;
@@ -108,7 +108,7 @@ app.get('/submit-name',function (req,res)
     names.push(name);
     res.send(JSON.stringify(names));
 });
-app.get('/articles/:articleName',function (req, res) {
+/*app.get('/articles/:articleName',function (req, res) {
     // SELECT * FROM article WHERE title='\'; DELETE WHERE a = '\asdf'
     pool.query("SELECT * FROM article WHERE title = $1" , [req.params.articleName], function (err,result)
     {
@@ -125,7 +125,7 @@ app.get('/articles/:articleName',function (req, res) {
           }
       }
     });
-});
+});*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
