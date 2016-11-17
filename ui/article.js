@@ -90,6 +90,27 @@ function loadComments () {
                 comments.innerHTML('Oops! Could not load comments!');
             }
         }
+        var button=document.getElementById('counter');
+    
+    button.onclick=function ()
+    {
+        var request=new XMLHttpRequest();
+        request.onreadystatechange=function (){
+            if (request.readyState===XMLHttpRequest.DONE)
+            {
+                if (request.status===200)
+                {
+                    var counter=request.responseText;
+                    var span=document.getElementById('count');
+                    span.innerHTML=counter.toString();
+                }
+            }
+        };
+        
+      // request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
+       //request.send(null);
+        
+    };
     };
     
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
@@ -102,7 +123,7 @@ loadLogin();
 loadComments();
 
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
     
     button.onclick=function ()
     {
@@ -122,4 +143,4 @@ var button=document.getElementById('counter');
        request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
        request.send(null);
         
-    };
+    };*/
