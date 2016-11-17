@@ -107,8 +107,8 @@ function loadComments () {
             }
         };
         
-      // request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
-       //request.send(null);
+       request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
+       request.send(null);
         
     };
     };
