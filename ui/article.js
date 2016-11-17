@@ -119,7 +119,7 @@ var button=document.getElementById('counter');
             }
         };
         
-       request.open('GET','http://sudha87.imad.hasura-app.io/articles/Article%20one/counter',true );
+       request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
        request.send(null);
         
     };
