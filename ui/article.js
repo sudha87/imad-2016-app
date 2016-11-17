@@ -116,7 +116,7 @@ var button=document.getElementById('counter');
             }
         };
         
-       request.open('GET','http://sudha87.imad.hasura-app.io/counter',true );
+       request.open('GET','/counter',true );
        request.send(null);
         
     };
