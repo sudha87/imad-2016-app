@@ -151,7 +151,7 @@ loadArticles();
 
 
 
-/* var button=document.getElementById('counter');
+var button=document.getElementById('counter');
     
     button.onclick=function ()
     {
@@ -173,7 +173,7 @@ loadArticles();
         
     };
     
-    var submit=document.getElementById('submit_btn');
+   /* var submit=document.getElementById('submit_btn');
     submit.onclick=function()
     {
         var request=new XMLHttpRequest();
