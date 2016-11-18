@@ -59,7 +59,7 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('User created successfully');
-                  register.value = 'Registered!';
+                  register.value = alert('Registered Successfully ! login with same crediations');
               } else {
                   alert('Could not register the user');
                   register.value = 'Register';
