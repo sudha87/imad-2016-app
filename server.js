@@ -258,10 +258,7 @@ app.get('/counter', function (req,res)
     res.send(counter.toString());
 });
 
-app.get('/ui/:counter',function (req,res)
-{
-    res.sendFile(path.join(_dirname,'ui',req.params.counter))
-});
+
 
 /*var pool= new Pool(config);
 app.get('/test-db',function (req,res)
