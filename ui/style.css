@@ -6,7 +6,7 @@ body {
 
 .center {
        background-image:url("/ui/Rose.png");
-       background-position: center top;
+       background-position: center;
 	   background-size: 80px 60px;
 	   padding: 250px 0;
 	   margin: 30px;
