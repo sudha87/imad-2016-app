@@ -139,6 +139,17 @@ loadLogin();
 loadArticles();
 
 
+//Move the image
+    var img=document.getElementById('madi');
+    var marginLeft=0;
+    function moveRight()
+    {
+        marginLeft=marginLeft + 1;
+        img.style.marginLeft=marginLeft + 'px';
+    }
+    img.onclick=function() {
+        var interval=setInterval(moveRight,50);
+    };
 
 
 
@@ -150,8 +161,7 @@ loadArticles();
 
 
 
-
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
     
     button.onclick=function ()
     {
@@ -173,7 +183,7 @@ var button=document.getElementById('counter');
         
     };
     
-   /* var submit=document.getElementById('submit_btn');
+    var submit=document.getElementById('submit_btn');
     submit.onclick=function()
     {
         var request=new XMLHttpRequest();
