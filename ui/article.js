@@ -103,7 +103,7 @@ loadLogin();
 loadComments();
 
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
     
     button.onclick=function ()
     {
@@ -123,4 +123,4 @@ var button=document.getElementById('counter');
        request.open('GET','http://sudha87.imad.hasura-app.io/articles/counter',true );
        request.send(null);
         
-    };
+    };*/
