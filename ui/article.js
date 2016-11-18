@@ -82,7 +82,7 @@ function loadComments () {
                         </div>
                         <div class="up">
                         <button id="counter">click me!</button><span id="count">0</span>
-                        <script type="text/javascript" src="/ui/main.js"></script>
+                        <script type="text/javascript" src="/main.js"></script>
                         </div>
                     </div>`;
                 }
