@@ -80,6 +80,10 @@ function loadComments () {
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
+                        <div class="up">
+                        <button id="counter">click me!</button><span id="count">0</span>
+                        <script type="text/javascript" src="/ui/main.js"></script>
+                        </div>
                     </div>`;
                 }
                 comments.innerHTML = content;
