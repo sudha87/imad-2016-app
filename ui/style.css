@@ -45,7 +45,11 @@ body {
     font-style: italic;
     font-size: 0.8em;
 }
-
+.uname {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+}
 #comment_form {
     margin-left: 10px;
     padding-bottom: 10px;
