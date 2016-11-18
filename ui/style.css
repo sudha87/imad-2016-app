@@ -5,9 +5,14 @@ body {
 }
 
 .center {
-        background-image:url("/ui/Rose.png");
-        background-size:cover;
-        text-align: center;
+       background-image:url("/ui/Rose.png");
+       background-position: center top;
+	   background-size: cover;
+	   padding: 250px 0;
+	   margin: 30px;
+	   text-shadow: 0 2px #000000;
+	   font-family: 'Trebuchet MS', 'Helvetica';
+       text-align: center;
 }
 
 .text-big {
