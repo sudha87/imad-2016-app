@@ -45,6 +45,12 @@ body {
     font-style: italic;
     font-size: 0.8em;
 }
+.login_btn: {
+    color: #fff;
+}
+.register_btn: {
+    color:#fff;
+}
 .uname {
     position: absolute;
     right: 0px;
