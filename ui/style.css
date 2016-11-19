@@ -5,13 +5,7 @@ body {
 }
 
 .center {
-       background-image:url("/ui/Rose.png");
-       background-position: center;
-       background-size: cover;
-	   padding: 250px 0;
-	   margin:0 auto;
-	   text-shadow: 0 2px #000000;
-	   font-family: 'Trebuchet MS', 'Helvetica';
+       
        text-align: center;
 }
 
