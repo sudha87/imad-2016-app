@@ -39,7 +39,11 @@ body {
     font-style: italic;
     font-size: 0.8em;
 }
-
+.ul {
+    position:fixed;
+    top:0px;
+    width:100%;
+}
 .uname {
     right: 0px;
     width: 300px;
