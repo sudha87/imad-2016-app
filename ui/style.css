@@ -44,6 +44,9 @@ body {
     top:0px;
     width:100%;
 }
+.li {
+    float:left;
+}
 .uname {
     right: 0px;
     width: 300px;
