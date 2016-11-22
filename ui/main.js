@@ -170,8 +170,8 @@ var button=document.getElementById('counter');
                 {
                     var counter=request.responseText;
                     var span=document.getElementById('count');
-                    //span.innerHTML=counter.toString();
-                    counter.innerHTML = count.toString();
+                    span.innerHTML=counter.toString();
+                    //counter.innerHTML = count.toString();
                 }
             }
     }
