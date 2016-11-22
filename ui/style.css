@@ -40,6 +40,7 @@ body {
     font-size: 0.8em;
 }
 .out{
+    position:absolute;
     right:0px;
 }
 .uname {
