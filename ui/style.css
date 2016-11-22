@@ -39,7 +39,9 @@ body {
     font-style: italic;
     font-size: 0.8em;
 }
-
+.out{
+    right:0px;
+}
 .uname {
     position:absolute;
     right: 0px;
