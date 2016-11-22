@@ -154,9 +154,11 @@ loadArticles();
     img.onclick=function() {
         var interval=setInterval(moveRight,50);
     };
+    
 
 var button=document.getElementById('counter');
-    
+   if(counter) 
+   {
     button.onclick=function ()
     {
         var request=new XMLHttpRequest();
@@ -170,13 +172,14 @@ var button=document.getElementById('counter');
                     span.innerHTML=counter.toString();
                 }
             }
+        }
         };
         
        //request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
        request.open('GET','http://sudha87.imad.hasura-app.io/counter',true );
        request.send(null);
         
-    };
+    }
     
 
 
