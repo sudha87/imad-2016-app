@@ -172,7 +172,8 @@ var button=document.getElementById('counter');
             }
         };
         
-       request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
+       //request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
+       request.open('GET','http://sudha87.imad.hasura-app.io/counter',true );
        request.send(null);
         
     };
