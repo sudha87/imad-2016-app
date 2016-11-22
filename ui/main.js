@@ -172,7 +172,7 @@ var button=document.getElementById('counter');
                     span.innerHTML=counter.toString();
                 }
             }
-        }
+    }
         };
         
        //request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
