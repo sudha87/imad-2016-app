@@ -227,6 +227,13 @@ app.get('/counter', function (req,res)
 {
     counter=counter+1;
     res.send(counter.toString());
+    pool.query('UPDATE Upvote SET counter='+counter, function(err, results){
+        if (err){
+            return(err.toString());
+        } else {
+                console.log("");
+            }
+    });
 });
 
 
