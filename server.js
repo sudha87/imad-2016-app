@@ -221,20 +221,7 @@ app.get('/articles/:articleName', function (req, res) {
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-/*var counter=0;
-app.get('/counter', function (req, res) {
-   // make a select request
-   // return a response with the results
-   counter=counter+1;
-   res.send(counter.toString());
-   pool.query('SELECT * FROM Upvote', function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send(JSON.stringify(result.rows));
-      }
-   });
-});*/
+
 
 app.post('/counter', function (req,res){
     var counter=req.body.counter;
