@@ -221,7 +221,7 @@ app.get('/articles/:articleName', function (req, res) {
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-var counter=0;
+/*var counter=0;
 app.get('/counter', function (req, res) {
    // make a select request
    // return a response with the results
@@ -234,7 +234,7 @@ app.get('/counter', function (req, res) {
           res.send(JSON.stringify(result.rows));
       }
    });
-});
+});*/
 
 app.post('/counter', function (req,res){
     var counter=req.body.counter;
@@ -247,7 +247,7 @@ app.post('/counter', function (req,res){
         }
     });
 });
-/*var counter=0;
+var counter=0;
 app.get('/counter', function (req,res)
 {
     counter=counter+1;
@@ -259,7 +259,7 @@ app.get('/counter', function (req,res)
                 console.log("");
             }
     });
-});*/
+});
 
 
 
