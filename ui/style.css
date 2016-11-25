@@ -3,7 +3,7 @@ body {
     /*background-color: lightgrey;*/
     margin-top: 60px;
     background-image:  url("/ui/images2.jpg");
-    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .center {
