@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     /*background-color: lightgrey;*/
     margin-top: 60px;
+    background :  url("/ui/images2.jpg");
 }
 
 .center {
@@ -21,7 +22,7 @@ body {
     height: 200px;
 }
 .container {
-    
+
     margin: 0 auto;
     color: #4a4a4a;
     font-family: sans-serif;
