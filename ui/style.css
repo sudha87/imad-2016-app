@@ -55,7 +55,7 @@ body {
     overflow: hidden;
 }
 .uname {
-    position:relative;
+    position:fixed;
     top:100px;
     right: 30px;
     width: 300px;
