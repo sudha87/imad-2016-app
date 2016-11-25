@@ -46,6 +46,9 @@ body {
     position:absolute;
     right:30px;
 }
+.log {
+    position:relative;
+}
 .jumbotron {
     position: absolute;
     background: #111 url("/ui/images1.jpg") center center;
