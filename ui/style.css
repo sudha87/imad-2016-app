@@ -64,7 +64,7 @@ body {
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
-
+ display:block;
   text-decoration: none;
   text-transform: uppercase;
   transition: box-shadow 1s ease;
