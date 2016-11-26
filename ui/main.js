@@ -5,7 +5,7 @@ function loadLoginForm () {
         <div class="form-group">
         <h3>Login/Register to unlock awesome features</h3>
         
-        <input type="text" class="form-control" id="username" placeholder="username" /><br><br>
+        <input type="text" class="form-control" id="username" placeholder="username" />
         <input type="password" class="form-control" id="password" placeholder="password"/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
