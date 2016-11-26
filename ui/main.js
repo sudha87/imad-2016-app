@@ -7,8 +7,8 @@ function loadLoginForm () {
         
         <input type="text" class="form-control" id="username" placeholder="username" />
         <input type="password" class="form-control" id="password" placeholder="password"/>
-        <input type="submit" id="login_btn" class="btn btn-default" value="Login" />
-        <input type="submit" id="register_btn" class="btn btn-default" value="Register" />
+        <input type="submit" id="login_btn" class="btn btn-info" value="Login" />
+        <input type="submit" id="register_btn" class="btn btn-info" value="Register" />
         </div>
         </form>
         `;
