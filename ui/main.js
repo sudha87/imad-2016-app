@@ -170,7 +170,8 @@ var button=document.getElementById('counter');
         if(counter) 
        {
         var request=new XMLHttpRequest();
-        request.onreadystatechange=function (){
+        request.onreadystatechange=function ()
+        {
             if (request.readyState===XMLHttpRequest.DONE)
             {
                 if (request.status===200)
@@ -182,8 +183,8 @@ var button=document.getElementById('counter');
                     //counter.innerHTML = count.toString();
                 }
             }
-    }
-        };
+      }
+    };
         
        //request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
        request.open('GET','http://sudha87.imad.hasura-app.io/counter',true );
