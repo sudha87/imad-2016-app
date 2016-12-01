@@ -12,8 +12,8 @@ function loadLoginForm () {
         <label for="password">Password:</label>
         <input type="password" class="form-control" id="password" placeholder="password"/>
         </div>
-        <input type="submit" id="login_btn" class="btn btn-info" value="Login" />
-        <input type="submit" id="register_btn" class="btn btn-info" value="Register" />
+        <input type="submit" id="login_btn"  value="Login" />
+        <input type="submit" id="register_btn"  value="Register" />
         </form>
         </div>
         `;
