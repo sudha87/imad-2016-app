@@ -17,7 +17,6 @@ function loadLoginForm () {
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
-    // Submit username/password to login
     var submit = document.getElementById('login_btn');
     submit.onclick = function () {
         // Create a request object
@@ -28,15 +27,15 @@ function loadLoginForm () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = alert('Sucess!');
+                  submit.value = 'Sucess!';
               } else if (request.status === 403) {
-                  submit.value = alert('Invalid credentials. Try again?');
+                  submit.value = 'Invalid credentials. Try again?';
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
-                  //submit.value = 'Login';
+                  submit.value = 'Login';
               } else {
-                  alert('logged successfully');
-                  //submit.value = 'Login';
+                  alert('Something went wrong on the server');
+                  submit.value = 'Login';
               }
               loadLogin();
           }  
@@ -182,13 +181,13 @@ loadArticles();
                     }
                 }
             }
-           };
+           }
             
            //request.open('GET',window.location.protocol+''+window.location.host+'/counter',true );
            request.open('GET','http://sudha87.imad.hasura-app.io/counter',true );
            request.send(null);
             
-        }
+        };
     
 
 
