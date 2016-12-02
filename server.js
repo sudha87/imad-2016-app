@@ -224,17 +224,7 @@ app.get('/ui/:fileName', function (req, res) {
 });
 
 
-app.post('/counter', function (req,res){
-    var counter=req.body.counter;
-    pool.query('INSERT INTO "Upvote" (counter) VALUES ($1)',[counter,dbString],function (err,result){
-        if (err){
-            res.status(500).send(err.toString());
-        }
-        else {
-            res.send('sucessfully upvoted:' +counter);
-        }
-    });
-});
+
 var counter=0;
 app.get('/counter', function (req,res)
 {
