@@ -36,7 +36,7 @@ function loadLoginForm () {
                   //submit.value = 'Login';
               } else {
                   alert('logged successfully');
-                  submit.value = 'Login';
+                  //submit.value = 'Login';
               }
               loadLogin();
           }  
